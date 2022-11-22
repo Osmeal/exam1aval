@@ -1,0 +1,16 @@
+1
+cd /home/oscar
+mkdir examen
+2
+cd examen
+3
+cp ./Alumnos.txt ./si.txt
+
+4
+mkdir si
+5
+mv ./si.txt ./si
+6
+cut -f 1,4 si.txt --output '-'
+7
+cat si.txt | cut -f 1 | grep González | sort -u | wc -l
