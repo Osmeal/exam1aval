@@ -14,3 +14,5 @@ mv ./si.txt ./si
 cut -f 1,4 si.txt --output '-'
 7
 cat si.txt | cut -f 1 | grep González | sort -u | wc -l
+8
+sed 's/Vicente/Pepe/' Alumnos.txt
