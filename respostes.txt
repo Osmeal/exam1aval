@@ -7,7 +7,7 @@ B
 touch respostes.txt
 git add *
 git commit -m "añadir respostes"
-git remote add origin https://github.com/		/exam1aval.git
+git remote add origin https://github.com/Osmeal/exam1aval.git
 git branch -M master
 git push origin master
 C 
