@@ -1,11 +1,34 @@
+A
+git init
+touch readme.txt
+git add *
+git commit -m "añadir readme.txt"
+B
+touch respostes.txt
+git add *
+git commit -m "añadir respostes"
+git remote add origin https://github.com/		/exam1aval.git
+git branch -M master
+git push origin master
+C 
+git branch primera
+git switch primera
+N
+git switch master
+git merge segona
+git tag segona
+git push origin master
+O
+touch secrets.txt
+touch .gitignore
+
 1
 cd /home/oscar
 mkdir examen
 2
 cd examen
 3
-cp ./Alumnos.txt ./si.txt
-
+cat -n Alumnos.txt | grep SI$ | awk '{print $1}' > si.txt
 4
 mkdir si
 5
@@ -16,3 +39,9 @@ cut -f 1,4 si.txt --output '-'
 cat si.txt | cut -f 1 | grep González | sort -u | wc -l
 8
 sed 's/Vicente/Pepe/' Alumnos.txt
+9
+awk '{if( $4>=2010 && $4<=2019 ){ print }}' Alumnos.txt 
+10
+grep ^J Alumnos.txt | awk '{print $1 " " $2}' | uniq
+11
+grep -P M'\t' du.txt | sort -nr | head -n 3 | awk '{print $2}'
